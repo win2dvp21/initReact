@@ -1,4 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './pages/Home';
+import Seungyoun from './pages/Seungyoun';
+import Jisoo from './pages/Jisoo';
+import Gahyeon from './pages/Gahyeon';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/gahyeon/*" element={<Gahyeon />}></Route>
+        <Route path="/jisoo/*" element={<Jisoo />}></Route>
+        <Route path="/seungyoun/*" element={<Seungyoun />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -20,6 +42,6 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
 export default App;
