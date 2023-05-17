@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Seungyoun from './pages/Seungyoun';
 import Jisoo from './pages/Jisoo';
 import Gahyeon from './pages/Gahyeon';
+import Wallet from './pages/wallet';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/gahyeon/*" element={<Gahyeon />}></Route>
         <Route path="/jisoo/*" element={<Jisoo />}></Route>
         <Route path="/seungyoun/*" element={<Seungyoun />}></Route>
+        <Route path="/wallet/*" element={<Wallet />}></Route>
       </Routes>
     </BrowserRouter>
   );
