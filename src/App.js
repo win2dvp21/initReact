@@ -5,14 +5,20 @@ import Home from './pages/Home';
 import Seungyoun from './pages/Seungyoun';
 import Jisoo from './pages/Jisoo';
 import Gahyeon from './pages/Gahyeon';
+import Wallet from './pages/wallet';
+import ShoppingHistory from './pages/ShoppingHistory';
+import Mypage from './pages/Mypage';
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/mypage/*" element={<Mypage/>}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/gahyeon/*" element={<Gahyeon />}></Route>
         <Route path="/jisoo/*" element={<Jisoo />}></Route>
+        <Route path="/shoppinghistory/*" element={<ShoppingHistory/>}></Route>
         <Route path="/seungyoun/*" element={<Seungyoun />}></Route>
       </Routes>
     </BrowserRouter>

@@ -363,20 +363,14 @@
   top: 692px;
   color:#000000;
 }
+
 .edit-icon {
   position: absolute;
-  top: 688px;
-  left: 317px;
-  width: 56px;
-  height: 56px;
+  top: 701px;
+  left: 330px;
+  width: 30px;
+  height: 30px;
   color: #000000;
-}
-.edit-icon {
-  top: 702px;
-  left: 333px;
-  width: 25px;
-  height: 25px;
-  overflow: hidden;
 }
 .div {
   position: relative;
